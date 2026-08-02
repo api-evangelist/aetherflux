@@ -1,23 +1,84 @@
 aid: aetherflux
-name: Cowboy Space (Aetherflux)
-description: 'Cowboy Space (Aetherflux) is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+name: Cowboy Space Corporation (formerly Aetherflux)
+description: 'Cowboy Space Corporation is an American orbital-infrastructure company
+  founded in 2024 by Baiju Bhatt, co-founder and former co-CEO of Robinhood, headquartered
+  in San Carlos, California with a second site in Seattle, Washington. It operated
+  as Aetherflux Inc. from founding until May 2026, when it renamed to Cowboy Space
+  Corporation and broadened its mission from space-based solar power alone to vertically
+  integrated orbital infrastructure for the AI era, spanning launch vehicles, space-based
+  power generation and in-orbit compute. Its flagship program is Stampede, a Low Earth
+  Orbit constellation of satellites that harvest solar power to run on-orbit GPU data
+  centers, with the first Galactic Brain data-center node targeted for early 2027 using
+  NVIDIA Space-1 Vera Rubin modules and a small infrared power-beaming demonstrator
+  satellite planned for 2026. The company concluded that launch supply was the binding
+  constraint on orbital compute and is therefore also developing its own rocket, sized
+  between Falcon 9 and Starship at roughly 20,000-25,000 kg of payload, whose upper
+  stage is itself the payload - each one intended to become a one-megawatt orbital data
+  center - with a first launch targeted for the end of 2028. It has raised roughly USD
+  365 million to date, including a USD 50 million Series A in April 2025 and a USD 275
+  million Series B in May 2026 at a USD 2 billion valuation, led by Index Ventures with
+  IVP, Blossom Capital, SAIC, Breakthrough Energy Ventures, Construct Capital, Andreessen
+  Horowitz, NEA and Interlagos participating. Cowboy Space is a space hardware and energy
+  infrastructure company, not a software vendor: as of August 2026 it publishes no developer
+  portal, no API documentation, no SDK, no public GitHub organization and no machine-readable
+  API contract of any kind. Its entire public web presence is a four-page Framer-hosted
+  marketing site (home, terms, privacy, media terms of use) plus an Ashby-hosted careers
+  board.'
 url: https://raw.githubusercontent.com/api-evangelist/aetherflux/refs/heads/main/apis.yml
+image: https://framerusercontent.com/images/0329Z2COjkiHgcW28b3reMPgXg.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Aerospace
+- Space
+- Satellites
+- Launch Vehicles
+- Data Centers
+- Artificial Intelligence
+- Energy
+- Solar Power
+- Renewable Energy
+- Compute Infrastructure
+- United States
 apis: []
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aetherflux-domain-security.yml
+- type: Packages
+  url: packages/aetherflux-packages.yml
+- type: Conformance
+  url: conformance/aetherflux-conformance.yml
+- type: LLMsTxt
+  url: llms/aetherflux-llms.txt
 - type: Website
+  url: https://www.cowboyspace.com/
+- type: Careers
+  url: https://jobs.ashbyhq.com/cowboyspace
+- type: TermsOfService
+  url: https://www.cowboyspace.com/terms
+- type: PrivacyPolicy
+  url: https://www.cowboyspace.com/privacy
+- type: Legal
+  url: https://www.cowboyspace.com/mediatermsofuse
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cowboyspace/
+- type: Wikipedia
+  url: https://en.wikipedia.org/wiki/Cowboy_Space_Corporation
+- type: SecondaryMarket
   url: https://forgeglobal.com/aetherflux_stock/

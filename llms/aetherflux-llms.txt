@@ -1,0 +1,55 @@
+# Cowboy Space Corporation (formerly Aetherflux)
+
+> Cowboy Space Corporation is an orbital-infrastructure company founded in 2024 by Baiju Bhatt, co-founder and former co-CEO of Robinhood, headquartered in San Carlos, California with a second site in Seattle, Washington. It is building a vertically integrated stack for the AI era — satellites that harvest solar power in Low Earth Orbit, GPU data centers that run on that power in orbit, and its own launch vehicle to put them there. It operated as **Aetherflux Inc.** from founding until May 2026, when it renamed and broadened its mission from space-based solar power alone.
+
+Cowboy Space is a space hardware and energy infrastructure company, not a software vendor. As of 2026-08-02 it publishes **no public API, no developer portal, no API documentation, no SDK, no public GitHub organization and no machine-readable API contract**. Do not assume or invent an `api.cowboyspace.com`, `docs.cowboyspace.com` or `developer.cowboyspace.com` endpoint — none of those hosts resolve (NXDOMAIN). Its entire public web surface is four pages.
+
+## Company
+
+- [Cowboy Space Corporation](https://www.cowboyspace.com/): company website — a four-page Framer site (home, terms, privacy, media terms of use)
+- [Careers](https://jobs.ashbyhq.com/cowboyspace): open roles, hosted on Ashby (there is no first-party /careers page)
+- [LinkedIn](https://www.linkedin.com/company/cowboyspace/)
+- [Wikipedia](https://en.wikipedia.org/wiki/Cowboy_Space_Corporation)
+- Headquarters: San Carlos, California, USA; second site in Seattle, Washington
+- Founded 2024 as Aetherflux Inc.; renamed Cowboy Space Corporation in May 2026
+- `cowboy.space` and `aetherflux.com` are company-controlled domains; the first redirects to the main site, the second serves nothing
+
+## Programs
+
+- **Stampede** — a constellation of Low Earth Orbit satellites that harness solar power to run on-orbit GPU data centers. Each launch grows the constellation's power and compute capacity.
+- **Galactic Brain** — the orbital data-center node. First deployment targeted for Q1 2027, using NVIDIA Space-1 Vera Rubin modules.
+- **Power beaming** — the original Aetherflux thesis: collect solar energy in LEO and transmit it to ground stations by infrared laser (not microwave), with receivers initially larger than 10 metres. A small demonstrator satellite is planned for 2026. Now positioned as a building block rather than the primary business.
+- **Launch vehicle** — announced May 2026. Sized between Falcon 9 and Starship, targeting roughly 20,000–25,000 kg of payload, with a first launch targeted for the end of 2028. The distinguishing design choice is that the **upper stage is the payload**: each upper stage is intended to become a one-megawatt orbital data center rather than be discarded.
+
+## People
+
+- **Baiju Bhatt** — founder and CEO; co-founder and former co-CEO of Robinhood Markets
+- **Tyler Grinnell** — previously director of launch operations at SpaceX
+- **Warren Lamont** — previously rocket engine and booster lead at Blue Origin
+
+## Investment
+
+- Roughly USD 365 million raised to date
+- Series A, April 2025: USD 50 million, co-led by Index Ventures and Interlagos
+- Series B, May 2026: USD 275 million at a USD 2 billion valuation, led by Index Ventures with IVP, Blossom Capital and SAIC joining
+- Existing backers include Breakthrough Energy Ventures, Construct Capital, Andreessen Horowitz and NEA; angel investors reported include Vlad Tenev, Daniel Gallagher, Jared Leto and François-Paul Journe
+- [Index Ventures portfolio page](https://www.indexventures.com/companies/aetherflux/)
+- [Forge Global](https://forgeglobal.com/aetherflux_stock/): secondary-market listing for private shares (still under the Aetherflux slug)
+
+## Legal
+
+- [Terms](https://www.cowboyspace.com/terms)
+- [Privacy Policy](https://www.cowboyspace.com/privacy)
+- [Media Terms of Use](https://www.cowboyspace.com/mediatermsofuse)
+
+## Code and packages
+
+- No GitHub organization can be attributed to Cowboy Space. `github.com/cowboyspace` does not exist; `github.com/cowboy-space` and `github.com/AetherFlux` are unrelated individual user accounts, the latter belonging to a person named Lars Thomsen.
+- No packages are published on npm, PyPI, RubyGems, crates.io, Packagist or NuGet. The npm package `@aetherflux/smarty-pants` is an unrelated personal HTTP-client project. See `packages/aetherflux-packages.yml`.
+
+## What this repo contains
+
+- `well-known/aetherflux-well-known.yml`: the full `/.well-known/` and contract-discovery probe record across four hosts, recorded with status codes
+- `packages/aetherflux-packages.yml`: registry search record (no first-party packages)
+- `conformance/aetherflux-conformance.yml`: FCC/FAA/export-control regulatory status; API standards recorded as not-applicable
+- `security/aetherflux-domain-security.yml`: TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe of cowboyspace.com

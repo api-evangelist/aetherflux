@@ -1,0 +1,151 @@
+generated: '2026-08-02'
+method: probed
+source: live probes of /.well-known/ and contract-discovery paths on Cowboy Space hosts (2026-08-02)
+result: >-
+  none - Cowboy Space Corporation (formerly Aetherflux) publishes no /.well-known/
+  document and no machine-readable API contract on any host it controls. Its entire
+  public web presence is a four-page Framer-hosted marketing site
+  (https://www.cowboyspace.com/) plus an Ashby-hosted careers board. No API host, docs
+  host or developer subdomain resolves in DNS.
+hosts:
+- host: https://www.cowboyspace.com
+  platform: >-
+    Framer-hosted static site, published 2026-07-12. Media assets served from
+    framerusercontent.com and res.cloudinary.com. Four pages total per its own sitemap.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /llms-full.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /openapi.yaml
+    status: 404
+    note: >-
+      404 served as the full HTML 404 page (7,384 bytes) rather than the short
+      "Not found" body. Not a spec - confirmed by inspecting the body.
+  - path: /swagger.json
+    status: 404
+  - path: /v1/openapi.json
+    status: 404
+  - path: /api-docs
+    status: 404
+    note: HTML 404 page body, not an API-docs surface
+  - path: /api
+    status: 404
+  - path: /api/openapi.json
+    status: 404
+  - path: /graphql
+    status: 404
+  - path: /mcp
+    status: 404
+  - path: /docs
+    status: 404
+  - path: /redoc
+    status: 404
+  - path: /feed
+    status: 404
+  - path: /rss.xml
+    status: 404
+  - path: /blog
+    status: 404
+  - path: /news
+    status: 404
+  - path: /press
+    status: 404
+  - path: /about
+    status: 404
+  - path: /contact
+    status: 404
+  - path: /careers
+    status: 404
+    note: >-
+      careers are hosted off-domain at jobs.ashbyhq.com/cowboyspace (200); there is no
+      first-party /careers page
+  - path: /terms
+    status: 200
+  - path: /privacy
+    status: 200
+  - path: /mediatermsofuse
+    status: 200
+  - path: /robots.txt
+    status: 200
+    note: >-
+      "User-agent: * / Allow: /" plus a Sitemap directive. No AI-crawler block list;
+      every crawler is allowed everywhere.
+  - path: /sitemap.xml
+    status: 200
+    note: >-
+      Four URLs only - /, /terms, /privacy, /mediatermsofuse. This is the complete
+      public surface of the site.
+- host: https://cowboyspace.com
+  note: >-
+    apex host 308-redirects every path to the www host; no independent surface.
+- host: https://cowboy.space
+  note: >-
+    alternate brand domain. The root redirects to https://www.cowboyspace.com/; every
+    other probed path returns 404 directly. No /.well-known/ document, no spec.
+- host: https://aetherflux.com
+  note: >-
+    the pre-rebrand domain still resolves but returns 404 on the root and on every
+    probed path. It is not serving the old Aetherflux site and carries no artifacts.
+hosts_that_do_not_resolve:
+- api.cowboyspace.com
+- docs.cowboyspace.com
+- developer.cowboyspace.com
+- developers.cowboyspace.com
+- app.cowboyspace.com
+- mcp.cowboyspace.com
+- status.cowboyspace.com
+- trust.cowboyspace.com
+- security.cowboyspace.com
+- blog.cowboyspace.com
+- careers.cowboyspace.com
+- jobs.cowboyspace.com
+- cdn.cowboyspace.com
+- api.cowboy.space
+- docs.cowboy.space
+- api.aetherflux.com
+- docs.aetherflux.com
+contract_discovery:
+  openapi: >-
+    not found - probed /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json,
+    /api/openapi.json, /api-docs, /docs and /redoc on the www host, the apex host and
+    the cowboy.space and aetherflux.com domains. Every candidate 404s; the two that
+    returned an HTML body were the site's own 404 page, not a docs shell hiding a spec.
+  graphql: >-
+    not found - /graphql 404s on every host. There is no GraphQL surface to introspect.
+  mcp: >-
+    not found - no /mcp endpoint, no mcp. subdomain, no MCP server published in any
+    registry or in the company's own materials.
+  a2a_agent_card: >-
+    not found - /.well-known/agent-card.json and the legacy /.well-known/agent.json
+    both return 404 on www.cowboyspace.com, cowboyspace.com and cowboy.space. No a2a/
+    artifact is written, per the search-only rule.
+  asyncapi: >-
+    not applicable - no event, webhook or streaming surface is published, and there is
+    no API to emit events from.
+  conclusion: >-
+    Cowboy Space Corporation publishes no machine-readable API contract. This is a
+    completed negative result on a hardware and energy-infrastructure company, not an
+    unfinished probe.
+x-evidence:
+  fetched: '2026-08-02'
+  method: curl GET with and without redirect-following, 10-20s timeout, across four hosts
+  dns_method: dig +short on candidate API, docs, status, trust and infrastructure subdomains

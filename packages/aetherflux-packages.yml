@@ -1,0 +1,71 @@
+generated: '2026-08-02'
+method: searched
+source: registry searches of npm, PyPI, RubyGems, crates.io, Packagist, NuGet and GitHub (2026-08-02)
+result: none
+notes: >-
+  Cowboy Space Corporation (formerly Aetherflux) publishes no client SDK, because it
+  publishes no public API. It is a launch-vehicle, satellite and orbital-compute
+  hardware company, not a software vendor. Every registry hit on "cowboyspace",
+  "cowboy-space" or "aetherflux" belongs to an unrelated author. No `SDKs` pointer is
+  wired in apis.yml and the sdk_count checks are correctly left unearned.
+packages: []
+registries_checked:
+- registry: npm
+  query: cowboyspace
+  result: 0 results
+- registry: npm
+  query: cowboy-space
+  result: >-
+    no first-party package. The query fuzzy-matches generic packages (getobject,
+    space-separated-tokens, exit) with no relationship to the company; no @cowboyspace
+    or @cowboy-space organization scope exists.
+- registry: npm
+  query: aetherflux
+  result: >-
+    one hit, unrelated - "@aetherflux/smarty-pants", "a pluggable smart request engine
+    with retry, fallback, and adaptive strategy execution", created 2026-04-22, homepage
+    github.com/aether-flux/smarty-pants, maintainer work.amar05@yahoo.com. A personal
+    HTTP-client project, nothing to do with the space company.
+- registry: pypi
+  query: cowboyspace
+  result: 404 - does not exist
+- registry: pypi
+  query: cowboy-space
+  result: 404 - does not exist
+- registry: pypi
+  query: aetherflux
+  result: 404 - does not exist
+- registry: rubygems
+  query: cowboyspace
+  result: 404 - no gem
+- registry: nuget
+  query: cowboyspace
+  result: 404 - no package
+- registry: packagist
+  query: cowboyspace
+  result: 404 - no package
+- registry: crates.io
+  query: cowboyspace
+  result: >-
+    403 from the crates.io API to an unauthenticated client; no crate is referenced in
+    any company material and no Rust SDK is claimed
+- registry: github
+  query: orgs/cowboyspace, orgs/cowboy-space, orgs/aetherflux
+  result: >-
+    no organization exists under any of these names. `github.com/cowboyspace` is 404.
+    `github.com/cowboy-space` is an individual USER account (created 2022-12-18, one
+    public repo, no name, no company, no bio, last updated 2023-07-15) and predates the
+    May 2026 rebrand. `github.com/AetherFlux` is an individual USER account belonging to
+    "Lars Thomsen" (created 2016-12-16, five public repos). Neither is attributable to
+    the company, so no `GitHubOrganization` pointer is wired - an unattributable
+    personal account is not evidence of a company GitHub presence.
+sdk_documentation_pages_checked:
+- url: https://www.cowboyspace.com/
+  status: 200
+  result: >-
+    four-page Framer marketing site; no developer, docs or SDK section anywhere in its
+    own sitemap
+- url: https://docs.cowboyspace.com/
+  status: DNS NXDOMAIN
+- url: https://developer.cowboyspace.com/
+  status: DNS NXDOMAIN
