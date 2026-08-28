@@ -25,6 +25,17 @@ description: 'Cowboy Space Corporation is an American orbital-infrastructure com
   marketing site (home, terms, privacy, media terms of use) plus an Ashby-hosted careers
   board.'
 url: https://raw.githubusercontent.com/api-evangelist/aetherflux/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://framerusercontent.com/images/0329Z2COjkiHgcW28b3reMPgXg.png
 x-type: company
 x-source: harvest:secondary-market
