@@ -62,7 +62,7 @@ tags:
 - Space
 - Satellite
 - Launch Vehicles
-- Data-Center
+- Data Center
 - Artificial Intelligence
 - Energy
 - Solar Power
@@ -82,6 +82,7 @@ tags_raw:
 - Renewable Energy
 - Compute Infrastructure
 - United States
+- Data-Center
 apis: []
 x-enrichment:
   date: '2026-08-02'
