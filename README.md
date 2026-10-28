@@ -64,22 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cowboy Space Corporation is an American orbital-infrastructure company founded in 2024 by Baiju Bhatt, co-founder and former co-CEO of Robinhood, headquartered in San Carlos, California with a second site in Seattle, Washington. It operated as **Aetherflux Inc.** until May 2026, when it renamed and broadened its mission from space-based solar power alone to vertically integrated orbital infrastructure for the AI era — satellites, in-orbit compute, and its own launch vehicle.
+Cowboy Space Corporation is an American orbital-infrastructure company founded in 2024 by Baiju Bhatt, co-founder and former co-CEO of Robinhood, headquartered in San Carlos, California with a second site in Seattle, Washington. It operated as Aetherflux Inc. from founding until May 2026, when it renamed to Cowboy Space Corporation and broadened its mission from space-based solar power alone to vertically integrated orbital infrastructure for the AI era, spanning launch vehicles, space-based power generation and in-orbit compute. Its flagship program is Stampede, a Low Earth Orbit constellation of satellites that harvest solar power to run on-orbit GPU data centers, with the first Galactic Brain data-center node targeted for early 2027 using NVIDIA Space-1 Vera Rubin modules and a small infrared power-beaming demonstrator satellite planned for 2026. The company concluded that launch supply was the binding constraint on orbital compute and is therefore also developing its own rocket, sized between Falcon 9 and Starship at roughly 20,000-25,000 kg of payload, whose upper stage is itself the payload - each one intended to become a one-megawatt orbital data center - with a first launch targeted for the end of 2028. It has raised roughly USD 365 million to date, including a USD 50 million Series A in April 2025 and a USD 275 million Series B in May 2026 at a USD 2 billion valuation, led by Index Ventures with IVP, Blossom Capital, SAIC, Breakthrough Energy Ventures, Construct Capital, Andreessen Horowitz, NEA and Interlagos participating. Cowboy Space is a space hardware and energy infrastructure company, not a software vendor: as of August 2026 it publishes no developer portal, no API documentation, no SDK, no public GitHub organization and no machine-readable API contract of any kind. Its entire public web presence is a four-page Framer-hosted marketing site (home, terms, privacy, media terms of use) plus an Ashby-hosted careers board.
 
-- **Stampede** — a Low Earth Orbit constellation of satellites that harvest solar power to run on-orbit GPU data centers.
-- **Galactic Brain** — the orbital data-center node, first deployment targeted Q1 2027 on NVIDIA Space-1 Vera Rubin modules.
-- **Power beaming** — infrared-laser power transmission from LEO to ground stations; small demonstrator planned for 2026.
-- **Launch vehicle** — announced May 2026, sized between Falcon 9 and Starship, first launch targeted end of 2028, where each upper stage is itself a one-megawatt orbital data center.
+**Areas:** Company · Aerospace · Space · Satellite · Launch Vehicles · Data Center · Artificial Intelligence · Energy · Solar Power · Renewable Energy · Compute Infrastructure · United States
 
-Roughly USD 365 million raised: a USD 50 million Series A (April 2025) and a USD 275 million Series B (May 2026) at a USD 2 billion valuation, led by Index Ventures with IVP, Blossom Capital, SAIC, Breakthrough Energy Ventures, Construct Capital, a16z, NEA and Interlagos participating.
+## Cowboy Space Corporation (formerly Aetherflux) on APIs.io
 
-## API posture
+Everything profiled for Cowboy Space Corporation (formerly Aetherflux) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aetherflux/](https://apis.io/providers/aetherflux/)** — or go straight to one of the APIs or properties below.
 
-Cowboy Space is a space hardware and energy infrastructure company, not a software vendor. As of 2026-08-02 it publishes **no public API, no developer portal, no API documentation, no SDK, no public GitHub organization and no machine-readable API contract of any kind**. Its entire public web presence is a four-page Framer-hosted marketing site plus an Ashby careers board. No API, docs, status or trust subdomain resolves.
+### Published properties
 
-This is a completed negative result, recorded with status codes in `well-known/aetherflux-well-known.yml`.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- https://www.cowboyspace.com/
-- https://jobs.ashbyhq.com/cowboyspace
-- https://en.wikipedia.org/wiki/Cowboy_Space_Corporation
-- https://forgeglobal.com/aetherflux_stock/
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aetherflux Domain Security](https://apis.io/security/aetherflux/aetherflux-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cowboyspace.com/)
+- [Blog](https://www.cowboyspace.com/news)
+- [Terms of service](https://www.cowboyspace.com/terms)
+- [Privacy policy](https://www.cowboyspace.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 10.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.6** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aetherflux/](https://apis.io/providers/aetherflux/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cowboy Space Corporation (formerly Aetherflux): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aetherflux/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
